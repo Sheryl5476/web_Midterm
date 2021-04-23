@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    background-color: rgb(247, 218, 224);
+}
+
+table{
+    width: 60%;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+td{
+    border-bottom: 1px solid blue;
+}

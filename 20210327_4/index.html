@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="rect"><div id="window"></div></div>
+        
+        <img id="wheel1" src="wheel-md.png">
+        <img id="wheel2" src="wheel-md.png">
+    </body>
+    <script>
+        var rect=document.getElementById("window");
+	    document.onkeydown=function(e){ //键盘按下事件绑定
+	 	var e=window.event||e;
+		 	switch(e.keyCode){
+		 		case 37: //左
+		 		rect.style.left = rect.offsetLeft - 5  + "px";
+		 		break; 
+		 		case 38: //上
+		 		rect.style.top=Math.max(0,rect.offsetTop-5)+"px";
+		 		break;
+		 		case 39:  //右
+		 		rect.style.left=Math.min(350,rect.offsetLeft+5)+"px";
+		 		break;	
+		 		case 40:  //下
+		 		rect.style.top=Math.min(350,rect.offsetTop+5)+"px";
+		 		break;		 			
+		 	}
+	    }
+
+    </script>
+</html>

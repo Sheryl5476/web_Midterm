@@ -28,11 +28,11 @@ $(function(){
         var numberOfListItem = $("li").length;
         var randomChildNumber = Math.floor(Math.random()*numberOfListItem);
         if(randomChildNumber == 0)
-            $("img").attr("src","https://www.reachfirst.com/wp-content/uploads/2018/08/Web-Development.jpg");
+            $("img").attr("src","../ramen.jpg");
         else if(randomChildNumber==1)
-            $("img").attr("src","https://codertw.com/wp-content/themes/lionmedia/img/img_no.gif");
+            $("img").attr("src","../rice.jpg");
         else if(randomChildNumber==2)
-            $("img").attr("src","https://1.bp.blogspot.com/-jSNVfNl41LM/Wc4Gxe0In1I/AAAAAAAAE1I/LgNIiGlzloQM6jLNI1k45ySRv_DKPkB5wCLcBGAs/s640/blogger.jpg");
+            $("img").attr("src","../dumpling.jpg");
         $("h1").text($("li").eq(randomChildNumber).text());
     });
 });
